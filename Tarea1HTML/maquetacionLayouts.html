@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Maquetacion tarea</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        color: #333;
+      }
+      header {
+        background-color: #1759bb;
+        color: #fff;
+        padding: 20px;
+        position: relative;
+      }
+      .logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+      main {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      article {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 70%;
+      }
+      h2 {
+        color: #333;
+        border-bottom: 2px solid #333;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+      }
+      h3 {
+        color: #555;
+        margin-top: 20px;
+      }
+      p {
+        line-height: 1.6;
+        margin-bottom: 15px;
+      }
+      aside {
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 30%;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      nav ul li {
+        margin-bottom: 10px;
+      }
+      nav ul li a {
+        color: #333;
+        text-decoration: none;
+      }
+      header h1 {
+        margin-left: 50%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Aquí empieza el encabezado principal que se mantendrá en todas las páginas del sitio web -->
+
+    <header>
+      <img
+        class="logo"
+        src="../imagenes/fcb.webp"
+        alt="logo"
+        width="100"
+        height="100"
+      />
+      <h1>Noticias deportivas</h1>
+    </header>
+
+    <!-- Aquí está el contenido principal de nuestra página -->
+    <main>
+      <aside>
+        <h2>Presentacion</h2>
+
+        <nav>
+          <ul>
+            <li><a href="#">vista 1</a></li>
+            <li><a href="#">vista 2</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- Contiene un artículo -->
+      <article>
+        <div>
+          <h1>Noticias deportivas</h1>
+          <ol>
+            <li>Primer partido</li>
+            <li>Segundo partido</li>
+            <li>Tercer partido</li>
+          </ol>
+
+          <h3>Equipos favoritos</h3>
+          <ul>
+            <li>Real Madrid</li>
+            <li>Barcelona</li>
+            <li>Sevilla</li>
+          </ul>
+        </div>
+
+        <div>
+          <img src="../imagenes/fcb.webp" alt="fcb" width="150" />
+          <img src="../imagenes/rm.jpg" alt="realMadrid" width="150" />
+          <img src="../imagenes/sevi.webp" alt="sevilla" width="150" />
+
+          <div>
+            <img
+              src="../imagenes/champions.jpg"
+              alt="cdf"
+              width="200"
+              usemap="#champions"
+            />
+
+            <map name="champions">
+              <area
+                shape="rect"
+                coords="0,0,50,50"
+                href="https://es.uefa.com/uefachampionsleague/"
+                alt="champions"
+              />
+              <area
+                shape="circle"
+                coords="100,100,100"
+                href="https://www.youtube.com/watch?v=2T7Inmq_-TE&pp=ygUSY2hhbXBpb25zIGZjIGJhcmNl"
+                alt="champions"
+              />
+            </map>
+          </div>
+        </div>
+
+        <table border="1" style="width: 100%">
+          <tr>
+            <th>Equipo</th>
+            <th>Puntos</th>
+            <th>Escudo</th>
+            <th colspan="3">Estadisticas</th>
+          </tr>
+          <tr>
+            <td>Real Madrid</td>
+            <td>100</td>
+            <td>
+              <img src="../imagenes/rm.jpg" alt="realMadrid" width="50" />
+            </td>
+            <td>3 victorias</td>
+            <td>10 derrotas</td>
+            <td>5 empates</td>
+          </tr>
+          <tr>
+            <td>Barcelona</td>
+            <td>100</td>
+            <td><img src="../imagenes/fcb.webp" alt="fcb" width="50" /></td>
+            <td>10 victorias</td>
+            <td>0 derrotas</td>
+            <td>1 empates</td>
+          </tr>
+          <tr>
+            <td>Sevilla</td>
+            <td>100</td>
+            <td>
+              <img src="../imagenes/sevi.webp" alt="sevilla" width="50" />
+            </td>
+            <td>2 victorias</td>
+            <td>2 derrotas</td>
+            <td>34 empates</td>
+          </tr>
+        </table>
+
+        <div style="text-align: center; padding: 10px; background-color: #ccc">
+          <form action="#">
+            <div>
+              <label for="nombre">Nombre de su equipo</label>
+              <input type="text" name="nombre" id="nombre" />
+            </div>
+            <div>
+              <label for="puntos">Puntos</label>
+              <input type="number" name="puntos" id="puntos" />
+            </div>
+
+            <div>
+              <label for="ciudad">ciudad</label>
+              <input type="text" name="ciudad" id="ciudad" />
+            </div>
+            <div>
+              <label for="fundacion"> Año de fundacion</label>
+              <input type="number" name="fundacion" id="fundacion" />
+            </div>
+            <div>
+              <label for="radio">es SA</label>
+              <input type="radio" name="esSA" id="esSA" />
+              <label for="radio">no es SA</label>
+              <input type="radio" name="esSA" id="esSA" />
+            </div>
+            <div>
+              <label for="escudo">escudo</label>
+              <input type="file" name="escudo" id="escudo" />
+            </div>
+            <div>
+              <input type="checkbox" name="check" id="check" />
+              <label for="check">Hacerme socio del club</label>
+            </div>
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Borrar" />
+          </form>
+        </div>
+        <div>
+          <form action="#">
+            <fieldset>
+              <legend>Formulario de contacto</legend>
+              <div>
+                <label for="paises">Pais</label>
+                <select name="paises" id="paises">
+                  <option value="espana">Espana</option>
+                  <option value="francia">Francia</option>
+                  <option value="portugal">Portugal</option>
+                </select>
+              </div>
+              <div>
+                <label for="fecha">Fecha de nacimiento</label>
+                <div>
+                  <!-- Dias -->
+                  <input
+                    type="text"
+                    name="dias"
+                    id="dias"
+                    min="1"
+                    max="31"
+                    width="4"
+                  />
+                  de
+                  <select name="mes" id=" mes">
+                    <option value="enero">Enero</option>
+                    <option value="febrero">Febrero</option>
+                    <option value="marzo">Marzo</option>
+                    <option value="abril">Abril</option>
+                    <option value="mayo">Mayo</option>
+                    <option value="junio">Junio</option>
+                    <option value="julio">Julio</option>
+                    <option value="agosto">Agosto</option>
+                    <option value="septiembre">Septiembre</option>
+                    <option value="octubre">Octubre</option>
+                    <option value="noviembre">Noviembre</option>
+                    <option value="diciembre">Diciembre</option>
+                  </select>
+                  de
+                  <input
+                    type="text"
+                    name="anios"
+                    id="anios"
+                    min="1900"
+                    max="2022"
+                    width="4"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="temas">temas de interes</label>
+                <select name="temas" id="temas" multiple>
+                  <option value="primer">Primer tema</option>
+                  <option value="segundo">Segundo tema</option>
+                  <option value="tercero">Tercer tema</option>
+                </select>
+              </div>
+              <input type="submit" value="Enviar" />
+            </fieldset>
+          </form>
+        </div>
+      </article>
+
+      <!-- el contenido aparte también se puede anidar dentro del contenido principal -->
+    </main>
+  </body>
+</html>

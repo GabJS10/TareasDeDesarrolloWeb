@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="text-align: center; padding: 10px; background-color: #ccc">
+      <form action="#">
+        <div>
+          <label for="nombre">Nombre de su equipo</label>
+          <input type="text" name="nombre" id="nombre" />
+        </div>
+        <div>
+          <label for="puntos">Puntos</label>
+          <input type="number" name="puntos" id="puntos" />
+        </div>
+
+        <div>
+          <label for="ciudad">ciudad</label>
+          <input type="text" name="ciudad" id="ciudad" />
+        </div>
+        <div>
+          <label for="fundacion"> Año de fundacion</label>
+          <input type="number" name="fundacion" id="fundacion" />
+        </div>
+        <div>
+          <label for="radio">es SA</label>
+          <input type="radio" name="esSA" id="esSA" />
+          <label for="radio">no es SA</label>
+          <input type="radio" name="esSA" id="esSA" />
+        </div>
+        <div>
+          <label for="escudo">escudo</label>
+          <input type="file" name="escudo" id="escudo" />
+        </div>
+        <div>
+          <input type="checkbox" name="check" id="check" />
+          <label for="check">Hacerme socio del club</label>
+        </div>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Borrar" />
+      </form>
+    </div>
+    <div>
+      <form action="#">
+        <fieldset>
+          <legend>Formulario de contacto</legend>
+          <div>
+            <label for="paises">Pais</label>
+            <select name="paises" id="paises">
+              <option value="espana">Espana</option>
+              <option value="francia">Francia</option>
+              <option value="portugal">Portugal</option>
+            </select>
+          </div>
+          <div>
+            <label for="fecha">Fecha de nacimiento</label>
+            <div>
+              <!-- Dias -->
+              <input
+                type="text"
+                name="dias"
+                id="dias"
+                min="1"
+                max="31"
+                width="4"
+              />
+              de
+              <select name="mes" id=" mes">
+                <option value="enero">Enero</option>
+                <option value="febrero">Febrero</option>
+                <option value="marzo">Marzo</option>
+                <option value="abril">Abril</option>
+                <option value="mayo">Mayo</option>
+                <option value="junio">Junio</option>
+                <option value="julio">Julio</option>
+                <option value="agosto">Agosto</option>
+                <option value="septiembre">Septiembre</option>
+                <option value="octubre">Octubre</option>
+                <option value="noviembre">Noviembre</option>
+                <option value="diciembre">Diciembre</option>
+              </select>
+              de
+              <input
+                type="text"
+                name="anios"
+                id="anios"
+                min="1900"
+                max="2022"
+                width="4"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label for="temas">temas de interes</label>
+            <select name="temas" id="temas" multiple>
+              <option value="primer">Primer tema</option>
+              <option value="segundo">Segundo tema</option>
+              <option value="tercero">Tercer tema</option>
+            </select>
+          </div>
+          <input type="submit" value="Enviar" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
