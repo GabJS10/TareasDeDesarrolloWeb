@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.step {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.step h3 {
+  margin-top: 0;
+}

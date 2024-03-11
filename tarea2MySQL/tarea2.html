@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/tarea2.css" />
+    <title>Configuración MySQL en Linux Con Apache</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Configuración MySQL en Linux Con Apache</h1>
+
+      <div class="step">
+        <h3>Paso 1: Instalar PHP 8</h3>
+        <img src="../imagenes/14.png" alt="img" />
+      </div>
+
+      <div class="step">
+        <h3>Paso 2: Crear archivo info.php con el comando nano de Linux</h3>
+        <img src="../imagenes/15.png" alt="img" />
+      </div>
+
+      <div class="step">
+        <h3>Paso 3: Instalar MySQL</h3>
+        <p>
+          Esto se hace con los comandos
+          <strong>sudo apt install mysql-server</strong> y
+          <strong>sudo mysql_secure_installation</strong>. Luego creamos un
+          usuario con el comando
+          <strong
+            >sudo mysql ALTER USER 'root'@'localhost' IDENTIFIED WITH
+            mysql_native_password BY 'password'; exit</strong
+          >. Por último, entramos a MySQL con <strong>mysql -u root -p</strong>.
+          Nos pedirá la contraseña.
+        </p>
+        <img src="../imagenes/16.png" alt="img" />
+      </div>
+
+      <div class="step">
+        <h3>Paso 4: Instalar herramientas necesarias de PHP</h3>
+        <p>
+          Ejecutamos el comando
+          <strong
+            >sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json
+            php-curl</strong
+          >
+          y seguimos el proceso de la guía. Luego entramos en (ip)/phpmyadmin.
+        </p>
+        <img src="../imagenes/17.png" alt="img" />
+        <p>Y podremos entrar con nuestro usuario ROOT</p>
+        <img src="../imagenes/18.png" alt="img" />
+      </div>
+
+      <h2>HABILITAR CONEXIÓN REMOTA A MYSQL</h2>
+      <div>
+        <img src="../imagenes/1.png" alt="img" />
+        <img src="../imagenes/2.png" alt="img" />
+        <img src="../imagenes/3.png" alt="img" />
+        <img src="../imagenes/4.png" alt="img" />
+        <img src="../imagenes/5.png" alt="img" />
+        <img src="../imagenes/6.png" alt="img" />
+        <img src="../imagenes/7.png" alt="img" />
+        <img src="../imagenes/8.png" alt="img" />
+        <img src="../imagenes/9.png" alt="img" />
+        <img src="../imagenes/10.png" alt="img" />
+        <img src="../imagenes/11.png" alt="img" />
+        <img src="../imagenes/12.png" alt="img" />
+      </div>
+    </div>
+  </body>
+</html>
